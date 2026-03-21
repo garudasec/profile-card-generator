@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f4ff;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+#main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+}
+
+
+form {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  margin-bottom: 36px;
+}
+
+form input[type="text"] {
+  flex: 1 1 180px;
+  padding: 11px 14px;
+  border: 1.5px solid #dde3f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #1a1a2e;
+  outline: none;
+  background: #f7f9ff;
+  transition: border-color 0.2s;
+}
+
+form input[type="text"]::placeholder {
+  color: #aab0c6;
+}
+
+form input[type="text"]:focus {
+  border-color: #5c73f2;
+  background: #fff;
+}
+
+#btn {
+  padding: 11px 28px;
+  background: #5c73f2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+#btn:hover {
+  background: #4a5ed6;
+  transform: translateY(-1px);
+}
+
+
+#card-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px;
+  width: 260px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+  border-top: 4px solid #5c73f2;
+  flex-shrink: 0;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #5c73f2;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.card h5 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #5c73f2;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card button {
+  width: 100%;
+  padding: 9px;
+  background: #fff0f0;
+  border: 1.5px solid #f87171;
+  color: #e53e3e;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.card button:hover {
+  background: #ffe0e0;
+}
+
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-appear {
+  animation: cardAppear 0.35s ease both;
+}
