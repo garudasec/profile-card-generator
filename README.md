@@ -31,5 +31,3 @@ A simple JavaScript project that creates dynamic profile cards using form input.
 2. Open `index.html` in your browser
 
 ---
-
-This is a beginner project built while learning JavaScript.
